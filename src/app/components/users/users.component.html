@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="input-box">
+        <input type="text" placeholder="{{ 'SEARCH' | translate }}" [(ngModel)]="value">
+    </div>
+    <div class="table-box">
+        <table class="table">
+            <tr >
+                <th>{{ "DATA.ID" | translate }}</th>
+                <th>{{ "DATA.NAME" | translate }}</th>
+                <th>{{ "DATA.USERNAME" | translate }}</th>
+                <th>{{ "DATA.EMAIL" | translate }}</th>
+                <th>{{ "DATA.ADDRESS" | translate }}</th>
+                <th>{{ "DATA.PHONE" | translate }}</th>
+                <th>{{ "DATA.WEBSITE" | translate }}</th>
+                <th>{{ "DATA.COMPANY" | translate }}</th>
+            </tr>
+            <tr *ngFor="let user of users | filter: value:'name'"
+                (click)="onClickUser(user.id, user.username)">
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.address.city }}</td>
+                <td>{{ user.phone }}</td>
+                <td>{{ user.website }}</td>
+                <td>{{ user.company.name }}</td>
+            </tr>
+        </table>
+    </div>
+
+
+</div>

@@ -1,0 +1,14 @@
+<div class="container">
+    <header class="header">
+        <div class="homeBox"></div>
+        <a class="home-link" routerLink="/">{{ "HEADER.HOME" | translate }}</a>
+        <div>
+            <div class="dropDownBox">
+                <select class="dropDown" (change)="onChangeLanguage($event)">
+                    <option value="en">{{ "HEADER.LANG.EN" | translate }}</option>
+                    <option value="ua">{{ "HEADER.LANG.UA" | translate }}</option>
+                </select>
+            </div>
+        </div>
+    </header>
+</div>

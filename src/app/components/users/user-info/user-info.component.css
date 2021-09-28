@@ -1,0 +1,58 @@
+.container {
+  max-width: 100%;
+  margin: auto;
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  th {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  td {
+    border: 0.5px solid rgb(175, 145, 117);
+    border-width: thin;
+    padding: 15px;
+  }
+  
+  tr:hover {
+    background-color: rgb(240, 223, 204);
+    cursor: pointer;
+  }
+
+  .table-box {
+    display: flex;
+    box-shadow: 1px 4px 8px darkgray;
+    padding: 16px 16px 0 16px;
+    border-radius: 4px;
+  }
+
+
+  .user-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    margin-left: 5px;
+  }
+
+  .user-list {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+  }
+
+  .user-item {
+    list-style: none;
+    margin: 5px;
+    
+  }

@@ -1,0 +1,22 @@
+{
+    "HEADER": {
+        "HOME": "Home",
+        "LANG":  {
+            "EN": "EN",
+            "UA": "UA"
+        }
+    },
+    "USERS": "Users",
+    "SEARCH": "Search",
+    "DATA": {
+        "ID": "Id",
+        "NAME": "Name",
+        "USERNAME": "Username",
+        "EMAIL": "Email",
+        "ADDRESS": "Address",
+        "PHONE": "Phone",
+        "WEBSITE": "Website",
+        "COMPANY": "Company"
+    },
+    "FOOTER": "@Softserve | PetProject for information about users | by Boblyk Nazar"
+}

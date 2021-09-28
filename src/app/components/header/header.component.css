@@ -1,0 +1,69 @@
+.container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+}
+
+.header {
+	position: relative;
+  display: flex;
+  justify-content: space-between;
+	width: 50%;
+	min-width: 300px;
+	height: 50px;
+	border: 10px solid transparent;
+	border-top: 10px solid rgba(5, 5, 5, 0.667);
+	border-left: 10px solid rgba(3, 3, 3, 0.667);
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.header::after {
+	content: '';
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 30%;
+	height: 49px;
+	border: 10px solid transparent;
+	border-bottom: 10px solid rgba(0, 0, 0, 0.667);
+	border-right: 10px solid rgba(0, 0, 0, 0.667);
+	transition: 0.3s linear all;
+}
+
+
+.homeBox {
+  position: absolute;
+}
+
+.home-link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+}
+
+.dropDownBox {
+  position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+.dropDown {
+  cursor: pointer;
+  padding: 5px;
+  background-color: transparent;
+
+}
+option {
+  cursor: pointer;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+
+}
