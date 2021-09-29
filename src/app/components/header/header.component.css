@@ -9,8 +9,8 @@
 
 .header {
 	position: relative;
-  display: flex;
-  justify-content: space-between;
+  	display: flex;
+  	justify-content: space-between;
 	width: 50%;
 	min-width: 300px;
 	height: 50px;
@@ -42,7 +42,13 @@
   text-decoration: none;
   color: rgb(0, 0, 0);
   padding: 5px;
+  transition: 0.4s;
 }
+
+.home-link:hover {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	border-radius: 20px;
+  }
 
 .dropDownBox {
   position: absolute;
@@ -52,8 +58,11 @@
 	margin: 0;
 	padding: 0;
 	z-index: 1;
+	transition: 0.4s;
 }
-
+.dropDownBox:hover{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
 .dropDown {
   cursor: pointer;
   padding: 5px;

@@ -2,12 +2,16 @@
     max-width: 100vw;
     margin: auto;
     min-height: 78vh;
-}
+  }
   .input-box {
     min-width: 100%;
     display: flex;
     margin: 10px;
     justify-content: center;
+  }
+  input:hover{
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
   .table-box {
@@ -15,10 +19,10 @@
     align-items: center;
     justify-content: center;
   }
-.table {
-  margin-left: 50px;
-  margin-right: 50px;
-}
+  .table {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
   th {
     background-color: rgba(3, 3, 3, 0.4);
     color: black;
@@ -27,12 +31,15 @@
   }
   
   td {
-    border: 0.5px solid rgb(175, 145, 117);
+    border: 0.5px solid rgba(3, 3, 3, 0.4);
     border-width: thin;
     padding: 15px;
   }
   
+  tr {
+    transition: 0.9s;
+  }
   tr:hover {
-    background-color: rgb(240, 223, 204);
+    background-color: rgba(3, 3, 3, 0.4);
     cursor: pointer;
   }

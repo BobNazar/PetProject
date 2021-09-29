@@ -1,32 +1,10 @@
 <div class="container">
     <div class="table-box">
-        <!-- <table *ngIf="user">
-            <tr>
-                <th>{{ "DATA.ID" | translate }}</th>
-                <th>{{ "DATA.NAME" | translate }}</th>
-                <th>{{ "DATA.USERNAME" | translate }}</th>
-                <th>{{ "DATA.EMAIL" | translate }}</th>
-                <th>{{ "DATA.ADDRESS" | translate }}</th>
-                <th>{{ "DATA.PHONE" | translate }}</th>
-                <th>{{ "DATA.WEBSITE" | translate }}</th>
-                <th>{{ "DATA.COMPANY" | translate }}</th>
-            </tr>
-            <tr>
-                <td>{{ user.id }}</td>
-                <td>{{ user.name }}</td>
-                <td>{{ user.username }}</td>
-                <td>{{ user.email }}</td>
-                <td>{{ user.address.city }}</td>
-                <td>{{ user.phone }}</td>
-                <td>{{ user.website }}</td>
-                <td>{{ user.company.name }}</td>
-            </tr>
-        </table> -->
         <div class="img-box">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQrOAggbZVYcHRIeaRH9_e95oyIOEccEAEUQ&usqp=CAU">
         </div>
         <div class="user-box">
-            <ul class="user-list">
+            <ul class="user-list" *ngIf="user">
                 <h2 class="user-title">{{ user.name }}</h2>
                 <li class="user-item">{{ user.username }}</li>
                 <li class="user-item">{{ user.email }}</li>
